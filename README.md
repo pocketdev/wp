@@ -1,2 +1,2 @@
 # wp
-WordPress Custom CSS
+WordPress Custom CSS for WordCamp Vienna 2017
