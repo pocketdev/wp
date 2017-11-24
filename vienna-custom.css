@@ -1,3 +1,150 @@
-/* Custom CSS for WordCamp Vienna */
+/* Custom CSS for WordCamp Vienna 2017 */
 
-.site-header { height: 320px; }
+body, .post-navigation .post-title, .comment-reply-title { font-family: 'Noto Sans', sans-serif; }
+
+.entry-title, .widecolumn h2 {
+    font-size: 5rem;
+	  font-weight: 400;
+}
+
+
+#main { padding-top: 0; }
+
+.hentry, .page-header, .page-content {
+    margin: 0;
+}
+
+@media screen and (min-width: 59.6875em) {
+    .hentry + .hentry, .page-header + .hentry, .page-header + .page-content {
+    margin-top: 10px;
+  }
+}
+
+h1.entry-title, h2.entry-title a, h3, .post-title { color: #1d66a5; }
+
+.post-thumbnail img {
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+
+/* Menu */
+ul li#menu-item-514 a { display: inline-block; }
+ul li#menu-item-514:after {
+	  margin-left: 15px; 
+    content: url('/files/2017/02/Austria-deutsch.jpg');
+}
+
+/*
+.entry-header {
+    padding: 50px;
+    margin-bottom: 20px;
+    background-color: #a8cef0;
+}
+*/
+  
+#wpcom_social_media_icons_widget-3 .genericon { font-size: 32px; }
+
+input[type=submit] {
+    background-color: #1d66a5 !important;
+}
+
+/* Sponsors Page */
+.wcorg-sponsors h3, .wcorg-sponsor-description p, .wcorg-sponsor-description div { display: none; }
+
+.wcorg-sponsor { width: 45%; float: left; min-height: 100px; }
+
+.wcorg-sponsor-level-gold, .wcorg-sponsor-level-silver, .wcorg-sponsor-level-bronze { clear: both; }
+
+.wcorg-sponsors h2 {
+	font-size: 22px;
+	line-height: 26px;
+	margin-top:    20px;
+	margin-bottom: 50px;
+	text-align: center;
+	color: #1d66a5;
+}
+
+.wcorg-sponsors h2 {
+    display: table;
+    white-space: nowrap;
+    &:before, &:after {
+      border-top: 1px solid #c1d8f5;
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 0.6em;
+      width: 49%;
+    }
+    &:before { right: 1.5%; }
+    &:after { left: 1.5%; }
+}
+
+.wcorg-sponsor-description {
+    padding-bottom: 30px;
+}
+
+/* Tickets Page */
+.page-slug-tickets, .page-id-1119 {
+	
+	.tix-column- {
+		
+		&description {
+			//width:45%
+		}
+
+		&price {
+			width:15%
+		}
+
+		&remaining {
+			width:19%
+		}
+
+		&quantity {
+			width:16%
+		}
+
+	}
+}
+
+.wcorg-speaker-description img {
+    padding-bottom: 20px;
+}
+
+/* Schedule Page */
+.page-slug-schedule {
+	.wcpt-col-time {
+    width: 80px;
+  }
+  
+  a.wcpt-session-title { 
+	  text-decoration: none; 
+	  border-bottom: none;
+	  font-weight: 600;
+  }
+  
+  a.wcpt-session-title:hover { text-decoration: underline; }
+
+  .wcpt-session-speakers a {
+    color: #1d66a5;
+    border-bottom: none;
+    display: table;
+	float: right;
+	text-decoration: none;
+  }
+  .wcpt-session-speakers a:hover {
+  	text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 701px) {
+
+	.page-id-5 {
+		.wcpt-col-time {
+			width:6em;
+		}
+	}
+
+}
+
